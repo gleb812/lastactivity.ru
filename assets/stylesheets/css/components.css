@@ -4853,7 +4853,7 @@ label {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 .footer .overlay {
-  background: rgba(21, 21, 21, 0.9);
+  background: rgba(21, 21, 21, 0);
 }
 .footer .container {
   z-index: 2;
