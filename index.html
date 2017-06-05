@@ -243,30 +243,29 @@
     
     <script type="text/javascript">
       //  Jplayer (Media Player) Banner Player Custom
-      
       $(document).ready(function(){
         var myPlaylist = new jPlayerPlaylist({
-          jPlayer: "#jquery_jplayer_1",
-          cssSelectorAncestor: "#jp_container_1"
-            }, [
-              {
-                title:"Neon",
-                artist:"Last Activity",
-                mp3:"assets/music/last_activity__neon.mp3",
-                poster:"assets/images/album5.jpg"
-              }
-            ], {
-              swfPath: "jplayer",
-              supplied: "mp3",
-              wmode: "window",
-              useStateClassSkin: true,
-              autoBlur: false,
-              smoothPlayBar: true,
-              keyEnabled: true,
-              remainingDuration: true,
-              toggleDuration: true
-            });
-      });
+            jPlayer: "#jquery_jplayer_1",
+            cssSelectorAncestor: "#jp_container_1"
+          },
+          [{
+              title:"Neon",
+              artist:"Last Activity",
+              mp3:"assets/music/last_activity__neon.mp3",
+              poster:"assets/images/album5.jpg"
+          }],
+          {
+            swfPath: "jplayer",
+            supplied: "mp3",
+            wmode: "window",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+          });
+        });
     </script>
   </body>
 </html>
