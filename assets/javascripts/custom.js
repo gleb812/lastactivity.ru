@@ -1,12 +1,12 @@
 $(document).ready(function() {
   "use strict";
 
-  // -------------- On Scroll Navbar Effect -------------- 
+  // -------------- On Scroll Navbar Effect --------------
 
     var window_width = $(window).width();
 
-    $(window).on("scroll", function(){  
-      "use strict"; 
+    $(window).on("scroll", function(){
+      "use strict";
       var scroll = $(window).on("scrollTop")();
       if( scroll > 60 ){
         $(".navbar").addClass("scroll-fixed-navbar");
@@ -15,14 +15,14 @@ $(document).ready(function() {
       }
     });
 
-  // -------------- Carousel -------------- 
+  // -------------- Carousel --------------
 
     $('.carousel').carousel({
       interval: 3000,
       pause: false
     });
 
-  // -------------- Wow -------------- 
+  // -------------- Wow --------------
 
     var wow = new WOW(
     {
@@ -33,11 +33,11 @@ $(document).ready(function() {
     );
     wow.init();
 
-    
-  // -------------- Parallax -------------- 
+
+  // -------------- Parallax --------------
 
   var window_width = $(window).on("width")();
-  
+
   if( window_width > 992 ){
     $('.event-list').parallax("50%", 0.1);
     $('.event-countdown').parallax("50%", 0.1);
@@ -51,7 +51,7 @@ $(document).ready(function() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    arrows: false, 
+    arrows: false,
     autoplay: true,
     dots: true,
     autoplaySpeed: 5000,
@@ -117,7 +117,7 @@ $(document).ready(function() {
     focusOnSelect: true,
   });
 
-  // -------------- Fancybox -------------- 
+  // -------------- Fancybox --------------
 
   $('.fancybox').fancybox({
     helpers: {
@@ -126,7 +126,7 @@ $(document).ready(function() {
       }
     }
   });
-  
+
   // -------------- Navbar Toggle Animation ----------------
 
   document.getElementById('hamburgler').addEventListener('click', checkNav);
@@ -150,16 +150,16 @@ $(document).ready(function() {
     document.body.classList.add('hamburgler-active');
   }
 
-  // -------------- Countdown -------------- 
+  // -------------- Countdown --------------
+//
+  //$('.countdown').downCount({
+  //  date: '06/10/2018 12:00:00',
+  //  offset: +10
+  //}, function () {
+  //  alert('WOOT WOOT, done!');
+  //});
 
-  $('.countdown').downCount({
-    date: '06/10/2018 12:00:00',
-    offset: +10
-  }, function () {
-    alert('WOOT WOOT, done!');
-  });
-
-  // -------------- Hide/Show JPlayer Toggle -------------- 
+  // -------------- Hide/Show JPlayer Toggle --------------
 
   $('.hsp-toggle').on("click", function(){
     $(this).parent('.jp-interface').toggleClass('hide-current hide-clicked');
@@ -182,7 +182,7 @@ $(document).ready(function() {
     $(this).toggleClass('open');
   });
 
-  // ----------------------- Popover ---------------------- 
+  // ----------------------- Popover ----------------------
 
   $(function(){
     $('.popover-custom').popover({
@@ -213,11 +213,11 @@ $(document).ready(function() {
 
 
 
-  // ---------------------- Tooltip ----------------------- 
+  // ---------------------- Tooltip -----------------------
 
   $('[data-toggle="tooltip"]').tooltip();
 
-  // -------------- nstSlider (Range Slider) -------------- 
+  // -------------- nstSlider (Range Slider) --------------
 
   $('.price-filter-slider').nstSlider({
     "crossable_handles": false,
@@ -230,4 +230,3 @@ $(document).ready(function() {
       }
   });
 });
-
